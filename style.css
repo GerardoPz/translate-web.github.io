@@ -6,7 +6,7 @@ html,
 body {
   height: 100%;
   margin: 0;
-  background-image: url("/sources/hero_img.jpg");
+  background-image: url("./sources/hero_img.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -34,7 +34,7 @@ body {
 }
 
 .logo-app img {
-  width: 12%; /* Ajusta este valor al tamaño deseado */
+  width: 12%;
 }
 
 .translate-container {
