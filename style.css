@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-image: url("/sources/hero_img.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 80vh;
+  border: 1px solid red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo-app {
+  display: flex;
+  border: 1px solid blue;
+  width: 100%;
+  padding-top: 3%;
+  padding-bottom: 8%;
+  justify-content: center;
+}
+
+.logo-app img {
+  width: 12%; /* Ajusta este valor al tamaño deseado */
+}
+
+.translate-container {
+  flex-grow: 2;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5%;
+  border: 1px solid green;
+}
+
+.box {
+  background: #232637;
+  border: 1px solid black;
+  border: 1px #414756;
+  border-radius: 5%;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .translate-container {
+    grid-template-columns: 1fr;
+  }
+}
