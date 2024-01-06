@@ -42,16 +42,51 @@ body {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 5%;
+  gap: 3%;
+  padding-left: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-right: 5%;
   border: 1px solid green;
 }
 
 .box {
+  display: flex;
+  align-items: start;
   background: #232637;
-  border: 1px solid black;
-  border: 1px #414756;
+  border: 1px solid #414756;
   border-radius: 5%;
-  padding: 20px;
+  justify-content: center;
+}
+
+.languages {
+  width: 90%;
+  display: flex;
+  gap: 2%;
+  border-bottom: 1px solid #414756;
+  padding-top: 5%;
+  padding-bottom: 3%;
+}
+
+.languages button {
+  background: none;
+  height: 5vh;
+  border: none;
+  color: #4d5562;
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.languages button.active {
+  background: #4d5562;
+  height: 5vh;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.languages button:hover {
+  color: #fff;
 }
 
 @media (max-width: 768px) {
