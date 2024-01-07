@@ -87,6 +87,23 @@ button {
   width: 100%;
 }
 
+.languages button:hover {
+  background: #4d5562;
+  border-radius: 8%;
+  color: #fff;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.languages button.active {
+  background: #4d5562;
+  height: 5vh;
+  color: #fff;
+  border-radius: 10px;
+}
+
 .languages button {
   background: none;
   height: 5vh;
