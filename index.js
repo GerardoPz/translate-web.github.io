@@ -9,6 +9,8 @@ document.addEventListener("DOMContentLoaded", function () {
       contador++;
     }
 
+    console.log(texto);
+    console.log(contador);
     let contadorLetras = document.getElementById("contador");
     contadorLetras.innerHTML = contador + "/500";
   }
@@ -16,4 +18,6 @@ document.addEventListener("DOMContentLoaded", function () {
   textarea.addEventListener("input", handleInput);
 
   handleInput.call(textarea);
+
+  console.log(textarea.value);
 });
